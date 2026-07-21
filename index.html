@@ -1,0 +1,206 @@
+
+Action: file_editor create /app/portfolio/index.html --file-text "<!DOCTYPE html>
+<html lang=\"id\">
+<head>
+<meta charset=\"UTF-8\" />
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+<title>Farras — Frontend Developer & Interface Designer</title>
+<meta name=\"description\" content=\"Portofolio pribadi Farras. Frontend developer & interface designer. Membangun antarmuka yang tajam, cepat, dan berkarakter.\" />
+<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />
+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />
+<link href=\"https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap\" rel=\"stylesheet\" />
+<link rel=\"stylesheet\" href=\"assets/css/style.css\" />
+<link rel=\"icon\" href=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23F1EBE0'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-family='Archivo Black' font-size='72' fill='%23FF3D2E'%3EF%3C/text%3E%3C/svg%3E\" />
+</head>
+<body data-page=\"home\">
+
+<!-- NAV -->
+<header class=\"nav\">
+  <div class=\"nav-inner\">
+    <a href=\"index.html\" class=\"nav-logo\" data-testid=\"nav-logo\"><span class=\"dot\"></span>FARRAS<span style=\"font-family:var(--f-serif);font-style:italic;color:var(--brand-1);margin-left:6px;\">/studio</span></a>
+    <nav>
+      <ul class=\"nav-menu\">
+        <li><a href=\"index.html\" data-nav=\"index.html\" data-testid=\"nav-home\">Home</a></li>
+        <li><a href=\"about.html\" data-nav=\"about.html\" data-testid=\"nav-about\">About</a></li>
+        <li><a href=\"skills.html\" data-nav=\"skills.html\" data-testid=\"nav-skills\">Skills</a></li>
+        <li><a href=\"projects.html\" data-nav=\"projects.html\" data-testid=\"nav-projects\">Projects</a></li>
+        <li><a href=\"contact.html\" data-nav=\"contact.html\" data-testid=\"nav-contact\">Contact</a></li>
+      </ul>
+    </nav>
+    <a href=\"contact.html\" class=\"nav-cta\" data-testid=\"nav-cta\">Hire Me →</a>
+    <button class=\"hamburger\" data-testid=\"hamburger\" aria-label=\"Menu\"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<aside class=\"mobile-menu\">
+  <ul>
+    <li><a href=\"index.html\" data-num=\"01\">Home</a></li>
+    <li><a href=\"about.html\" data-num=\"02\">About</a></li>
+    <li><a href=\"skills.html\" data-num=\"03\">Skills</a></li>
+    <li><a href=\"projects.html\" data-num=\"04\">Projects</a></li>
+    <li><a href=\"contact.html\" data-num=\"05\">Contact</a></li>
+  </ul>
+</aside>
+
+<!-- HERO -->
+<section class=\"hero\" data-testid=\"hero\">
+  <div class=\"container\">
+    <div class=\"hero-top\">
+      <div class=\"hero-meta\">
+        <span>Portfolio · <strong>2025</strong></span>
+        <span>Based in Jakarta, ID · Available for freelance</span>
+      </div>
+      <div class=\"hero-meta\" style=\"text-align:right;\">
+        <span>01 — Introduction</span>
+        <span>Scroll to explore ↓</span>
+      </div>
+    </div>
+
+    <h1 class=\"hero-name\" aria-label=\"Farras — Frontend Developer\">
+      <span class=\"line\"><span class=\"line-inner\">Farras.</span></span>
+      <span class=\"line\"><span class=\"line-inner\"><span class=\"accent\">Interface</span> crafts</span></span>
+      <span class=\"line\"><span class=\"line-inner\">with intent.</span></span>
+    </h1>
+
+    <div class=\"hero-bottom\">
+      <p class=\"hero-slogan reveal d1\">
+        A frontend developer who builds <em>bold</em>, kinetic web experiences —
+        interfaces that don't whisper, they <em>speak</em>.
+      </p>
+      <div class=\"hero-actions reveal d2\">
+        <a href=\"projects.html\" class=\"btn btn-primary\" data-testid=\"btn-portfolio\">Lihat Portofolio <span class=\"arrow\">→</span></a>
+        <a href=\"about.html\" class=\"btn btn-yellow\" data-testid=\"btn-about\">Tentang Saya</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class=\"marquee\" aria-hidden=\"true\" data-testid=\"marquee\">
+  <div class=\"marquee-track\">
+    <span>Frontend Development</span><span>Interface Design</span><span>Responsive Systems</span><span>Motion &amp; Micro-Interactions</span><span>Neo-Brutalism</span><span>Design Engineering</span>
+    <span>Frontend Development</span><span>Interface Design</span><span>Responsive Systems</span><span>Motion &amp; Micro-Interactions</span><span>Neo-Brutalism</span><span>Design Engineering</span>
+  </div>
+</div>
+
+<!-- PREVIEW SKILLS -->
+<section id=\"skills-preview\">
+  <div class=\"container\">
+    <span class=\"section-label reveal\">§ 02 — Capabilities</span>
+    <h2 class=\"section-title reveal\">Skills that <span class=\"serif\">move</span> the needle.</h2>
+    <p class=\"section-lede reveal d1\">Delapan disiplin utama yang saya asah setiap hari — dari markup semantik sampai keputusan desain yang teliti.</p>
+
+    <div class=\"preview-grid\">
+      <a href=\"skills.html\" class=\"tile col-4 brand-1 reveal\" data-testid=\"preview-skill-1\">
+        <div class=\"tile-num\">01 / 08</div>
+        <div class=\"tile-title\">HTML &amp; CSS</div>
+        <div class=\"tile-desc\" style=\"color:#fff;\">Semantic markup, layout modern (Grid, Flex), CSS variables, animasi native.</div>
+      </a>
+      <a href=\"skills.html\" class=\"tile col-4 brand-2 reveal d1\" data-testid=\"preview-skill-2\">
+        <div class=\"tile-num\">02 / 08</div>
+        <div class=\"tile-title\">JavaScript</div>
+        <div class=\"tile-desc\">Vanilla JS, DOM manipulation, event architecture, ES2020+.</div>
+      </a>
+      <a href=\"skills.html\" class=\"tile col-4 brand-3 reveal d2\" data-testid=\"preview-skill-3\">
+        <div class=\"tile-num\">03 / 08</div>
+        <div class=\"tile-title\">UI Design</div>
+        <div class=\"tile-desc\" style=\"color:#fff;\">Type systems, grid, contrast, motion — beyond templates.</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PREVIEW PROJECTS -->
+<section id=\"projects-preview\" style=\"padding-top:0;\">
+  <div class=\"container\">
+    <span class=\"section-label reveal\">§ 03 — Selected Work</span>
+    <h2 class=\"section-title reveal\">Recent <span class=\"serif\">projects.</span></h2>
+    <p class=\"section-lede reveal d1\">Tiga proyek terbaru — tiap-tiap dibangun dengan HTML/CSS/JavaScript murni dan pendekatan design-engineering.</p>
+
+    <div class=\"projects-grid\">
+      <a href=\"project-detail.html?id=1\" class=\"project-card reveal\" data-testid=\"preview-project-1\">
+        <div class=\"project-img pfield-1\">
+          <span class=\"project-tag\">01 · Web App</span>
+          <div class=\"visual\">KO</div>
+        </div>
+        <div class=\"project-body\">
+          <h3 class=\"project-title\">Kompas Overload</h3>
+          <p class=\"project-desc\">Dashboard berita realtime dengan filter kategori dan mode gelap Neo-Brutalism.</p>
+          <div class=\"project-tech\">
+            <span class=\"tech-chip a\">HTML</span><span class=\"tech-chip b\">CSS</span><span class=\"tech-chip c\">JS</span>
+          </div>
+        </div>
+      </a>
+      <a href=\"project-detail.html?id=2\" class=\"project-card reveal d1\" data-testid=\"preview-project-2\">
+        <div class=\"project-img pfield-2\">
+          <span class=\"project-tag\">02 · Landing Page</span>
+          <div class=\"visual\">NB</div>
+        </div>
+        <div class=\"project-body\">
+          <h3 class=\"project-title\">Nyala Botanica</h3>
+          <p class=\"project-desc\">Landing page brand tanaman hias dengan hero paralaks dan grid produk kinetik.</p>
+          <div class=\"project-tech\">
+            <span class=\"tech-chip a\">HTML</span><span class=\"tech-chip b\">GSAP</span><span class=\"tech-chip c\">Responsive</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class=\"center mt-60 reveal\">
+      <a href=\"projects.html\" class=\"btn btn-ghost\" data-testid=\"btn-view-all\">Lihat semua proyek <span class=\"arrow\">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section style=\"padding: 80px 0;\">
+  <div class=\"container\">
+    <div class=\"tile col-12\" style=\"background:var(--ink); color:var(--bg); padding: clamp(40px, 6vw, 80px); display:grid; grid-template-columns:1.4fr 1fr; gap:40px; align-items:center;\">
+      <div>
+        <div style=\"font-family:var(--f-mono);font-size:12px;letter-spacing:.15em;opacity:.6;margin-bottom:16px;\">§ 04 — LET'S BUILD</div>
+        <h3 style=\"font-family:var(--f-display); font-size:clamp(32px,5vw,64px); line-height:.95; letter-spacing:-0.03em; text-transform:uppercase;\">Punya ide berani? <span style=\"font-family:var(--f-serif); font-style:italic; color:var(--brand-2); text-transform:none;\">Mari eksekusi.</span></h3>
+      </div>
+      <div style=\"justify-self:end;\">
+        <a href=\"contact.html\" class=\"btn btn-yellow\" data-testid=\"btn-cta-strip\">Kontak Saya <span class=\"arrow\">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class=\"container\">
+    <div class=\"footer-top\">
+      <div class=\"footer-brand\">FARRAS<br/><span class=\"serif\">— studio.</span></div>
+      <div class=\"footer-col\">
+        <h5>Navigate</h5>
+        <a href=\"index.html\">Home</a>
+        <a href=\"about.html\">About</a>
+        <a href=\"skills.html\">Skills</a>
+        <a href=\"projects.html\">Projects</a>
+        <a href=\"contact.html\">Contact</a>
+      </div>
+      <div class=\"footer-col\">
+        <h5>Sosial</h5>
+        <a href=\"https://github.com/farras\" target=\"_blank\" rel=\"noopener\">GitHub ↗</a>
+        <a href=\"https://linkedin.com/in/farras\" target=\"_blank\" rel=\"noopener\">LinkedIn ↗</a>
+        <a href=\"https://instagram.com/farras\" target=\"_blank\" rel=\"noopener\">Instagram ↗</a>
+        <a href=\"mailto:hello@farras.dev\">hello@farras.dev</a>
+      </div>
+    </div>
+    <div class=\"footer-bottom\">
+      <span>© <span data-year></span> Farras. Built with HTML · CSS · JS.</span>
+      <span>Neo-Brutalist / v1.0</span>
+    </div>
+  </div>
+</footer>
+
+<button class=\"back-top\" data-testid=\"back-top\" aria-label=\"Back to top\">↑</button>
+
+<script src=\"https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js\"></script>
+<script src=\"assets/js/main.js\"></script>
+</body>
+</html>
+"
+Observation: Create successful: /app/portfolio/index.html
