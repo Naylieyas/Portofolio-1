@@ -1,0 +1,121 @@
+
+Action: file_editor create /app/portfolio/contact.html --file-text "<!DOCTYPE html>
+<html lang=\"id\">
+<head>
+<meta charset=\"UTF-8\" />
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+<title>Contact — Farras</title>
+<meta name=\"description\" content=\"Hubungi Farras: email, WhatsApp, GitHub, LinkedIn, Instagram, dan formulir kontak.\" />
+<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />
+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />
+<link href=\"https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap\" rel=\"stylesheet\" />
+<link rel=\"stylesheet\" href=\"assets/css/style.css\" />
+<link rel=\"icon\" href=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23F1EBE0'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-family='Archivo Black' font-size='72' fill='%23FF3D2E'%3EF%3C/text%3E%3C/svg%3E\" />
+</head>
+<body data-page=\"contact\">
+
+<header class=\"nav\">
+  <div class=\"nav-inner\">
+    <a href=\"index.html\" class=\"nav-logo\"><span class=\"dot\"></span>FARRAS<span style=\"font-family:var(--f-serif);font-style:italic;color:var(--brand-1);margin-left:6px;\">/studio</span></a>
+    <nav>
+      <ul class=\"nav-menu\">
+        <li><a href=\"index.html\" data-nav=\"index.html\">Home</a></li>
+        <li><a href=\"about.html\" data-nav=\"about.html\">About</a></li>
+        <li><a href=\"skills.html\" data-nav=\"skills.html\">Skills</a></li>
+        <li><a href=\"projects.html\" data-nav=\"projects.html\">Projects</a></li>
+        <li><a href=\"contact.html\" data-nav=\"contact.html\">Contact</a></li>
+      </ul>
+    </nav>
+    <a href=\"contact.html\" class=\"nav-cta\">Hire Me →</a>
+    <button class=\"hamburger\" aria-label=\"Menu\"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<aside class=\"mobile-menu\">
+  <ul>
+    <li><a href=\"index.html\" data-num=\"01\">Home</a></li>
+    <li><a href=\"about.html\" data-num=\"02\">About</a></li>
+    <li><a href=\"skills.html\" data-num=\"03\">Skills</a></li>
+    <li><a href=\"projects.html\" data-num=\"04\">Projects</a></li>
+    <li><a href=\"contact.html\" data-num=\"05\">Contact</a></li>
+  </ul>
+</aside>
+
+<section>
+  <div class=\"container\">
+    <span class=\"section-label reveal\">§ Contact · Say hi</span>
+    <h1 class=\"section-title reveal\">Mari <span class=\"serif\">berkabar.</span></h1>
+    <p class=\"section-lede reveal d1\">Punya proyek, kolaborasi, atau sekadar ingin mengobrol soal desain? Kirim pesan lewat kanal di bawah — saya biasanya balas dalam 1×24 jam.</p>
+
+    <div class=\"contact-grid\">
+      <div class=\"contact-links\">
+        <a href=\"mailto:hello@farras.dev\" class=\"contact-link reveal\" data-testid=\"contact-email\">
+          <div><span class=\"label\">EMAIL / 01</span><span class=\"value\">hello@farras.dev</span></div>
+          <span class=\"arrow\">↗</span>
+        </a>
+        <a href=\"https://wa.me/6281234567890\" target=\"_blank\" rel=\"noopener\" class=\"contact-link reveal d1\" data-testid=\"contact-wa\">
+          <div><span class=\"label\">WHATSAPP / 02</span><span class=\"value\">+62 812-3456-7890</span></div>
+          <span class=\"arrow\">↗</span>
+        </a>
+        <a href=\"https://github.com/farras\" target=\"_blank\" rel=\"noopener\" class=\"contact-link reveal d2\" data-testid=\"contact-github\">
+          <div><span class=\"label\">GITHUB / 03</span><span class=\"value\">github.com/farras</span></div>
+          <span class=\"arrow\">↗</span>
+        </a>
+        <a href=\"https://linkedin.com/in/farras\" target=\"_blank\" rel=\"noopener\" class=\"contact-link reveal d3\" data-testid=\"contact-linkedin\">
+          <div><span class=\"label\">LINKEDIN / 04</span><span class=\"value\">linkedin.com/in/farras</span></div>
+          <span class=\"arrow\">↗</span>
+        </a>
+        <a href=\"https://instagram.com/farras\" target=\"_blank\" rel=\"noopener\" class=\"contact-link reveal d4\" data-testid=\"contact-instagram\">
+          <div><span class=\"label\">INSTAGRAM / 05</span><span class=\"value\">@farras</span></div>
+          <span class=\"arrow\">↗</span>
+        </a>
+      </div>
+
+      <form id=\"contact-form\" class=\"form reveal d1\" novalidate data-testid=\"contact-form\">
+        <div style=\"border:var(--border-thick); background:var(--paper); padding: clamp(24px, 3vw, 40px); box-shadow: var(--shadow-md);\">
+          <div style=\"font-family:var(--f-mono); font-size:12px; letter-spacing:.15em; opacity:.7; margin-bottom: 18px;\">§ FORMULIR KONTAK</div>
+          <div class=\"field\">
+            <label for=\"name\">Nama</label>
+            <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Nama lengkap Anda\" required data-testid=\"field-name\" />
+          </div>
+          <div class=\"field\" style=\"margin-top:16px;\">
+            <label for=\"email\">Email</label>
+            <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"anda@email.com\" required data-testid=\"field-email\" />
+          </div>
+          <div class=\"field\" style=\"margin-top:16px;\">
+            <label for=\"message\">Pesan</label>
+            <textarea id=\"message\" name=\"message\" placeholder=\"Ceritakan proyek atau ide Anda…\" required data-testid=\"field-message\"></textarea>
+          </div>
+          <div class=\"form-status\" role=\"status\" data-testid=\"form-status\"></div>
+          <div style=\"display:flex; justify-content:space-between; align-items:center; gap:16px; margin-top: 24px; flex-wrap:wrap;\">
+            <span class=\"form-note\">→ Ditangani lokal, terenkripsi client-side.</span>
+            <button type=\"submit\" class=\"btn btn-primary\" data-testid=\"submit-btn\">Kirim Pesan <span class=\"arrow\">→</span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class=\"container\">
+    <div class=\"footer-top\">
+      <div class=\"footer-brand\">FARRAS<br/><span class=\"serif\">— studio.</span></div>
+      <div class=\"footer-col\">
+        <h5>Navigate</h5>
+        <a href=\"index.html\">Home</a><a href=\"about.html\">About</a><a href=\"skills.html\">Skills</a><a href=\"projects.html\">Projects</a><a href=\"contact.html\">Contact</a>
+      </div>
+      <div class=\"footer-col\">
+        <h5>Sosial</h5>
+        <a href=\"https://github.com/farras\" target=\"_blank\" rel=\"noopener\">GitHub ↗</a><a href=\"https://linkedin.com/in/farras\" target=\"_blank\" rel=\"noopener\">LinkedIn ↗</a><a href=\"https://instagram.com/farras\" target=\"_blank\" rel=\"noopener\">Instagram ↗</a><a href=\"mailto:hello@farras.dev\">hello@farras.dev</a>
+      </div>
+    </div>
+    <div class=\"footer-bottom\"><span>© <span data-year></span> Farras. Built with HTML · CSS · JS.</span><span>Neo-Brutalist / v1.0</span></div>
+  </div>
+</footer>
+<button class=\"back-top\" aria-label=\"Back to top\">↑</button>
+<script src=\"https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js\"></script>
+<script src=\"assets/js/main.js\"></script>
+</body>
+</html>
+"
+Observation: Create successful: /app/portfolio/contact.html
